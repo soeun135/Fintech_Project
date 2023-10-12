@@ -1,6 +1,11 @@
-package com.zerobase.domain.domain;
+package com.zerobase.domain.domain
 
-import javax.persistence.*;
+import javax.persistence.Column
+import javax.persistence.Entity
+import javax.persistence.GeneratedValue
+import javax.persistence.GenerationType
+import javax.persistence.Id
+import javax.persistence.Table
 
 @Entity
 @Table(name = "USR_INFO")
@@ -8,7 +13,7 @@ class UserInfo(
         @Column(name = "usr_key")
         val userKey: String,
 
-        @Column(name="usr_reg_num")
+        @Column(name = "usr_reg_num")
         val userRegistrationNumber: String,
 
         @Column(name = "usr_nm")
@@ -21,4 +26,3 @@ class UserInfo(
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     val id: Long? = null
 }
-

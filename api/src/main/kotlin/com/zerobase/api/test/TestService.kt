@@ -10,5 +10,5 @@ class TestService(
 ) {
     fun testGetService(userKey: String) = userInfoRepository.findByUserKey(userKey).toDto()
 
-    fun UserInfo.toDto() = TestDto.UserInfoDto(userKey, userRegistrationNumber, userName,userIncomeAmount)
+    fun UserInfo.toDto() = TestDto.UserInfoDto(userKey, userRegistrationNumber, userName, userIncomeAmount)
 }
