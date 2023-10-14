@@ -8,7 +8,7 @@ import org.springframework.stereotype.Service
 @Service
 class LoanRequestServiceImpl(
     private val generateKey: GenerateKey,
-    private val userInfoRepository: UserInfoRepository
+    private val userInfoRepository: UserInfoRepository,
     private val encryptComponent: EncryptComponent
 ) : LoanRequestService{
     override fun loanRequestMain(
