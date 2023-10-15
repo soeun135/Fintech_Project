@@ -8,7 +8,6 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories
 
 @Configuration
 @EnableJpaAuditing
-@ComponentScan(basePackages = ["com.zerobase"])
 @EntityScan(basePackages = ["com.zerobase.domain"])
 @EnableJpaRepositories(basePackages = ["com.zerobase.domain"])
 class JpaAuditingConfiguration {

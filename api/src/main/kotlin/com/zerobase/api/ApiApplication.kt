@@ -7,6 +7,7 @@ import org.springframework.cache.annotation.EnableCaching
 import org.springframework.context.annotation.ComponentScan
 
 @SpringBootApplication
+@ComponentScan(basePackages = ["com.zerobase"])
 class ApiApplication
 
 fun main(args: Array<String>) {
