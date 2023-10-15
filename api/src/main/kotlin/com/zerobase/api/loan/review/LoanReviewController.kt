@@ -1,5 +1,6 @@
 package com.zerobase.api.loan.review
 
+import org.springframework.cache.annotation.Cacheable
 import org.springframework.http.ResponseEntity
 import org.springframework.web.bind.annotation.GetMapping
 import org.springframework.web.bind.annotation.PathVariable
@@ -11,7 +12,7 @@ import org.springframework.web.bind.annotation.RestController
 class LoanReviewController(
     private val loanReviewServiceImpl: LoanReviewServiceImpl
 ) {
-    @GetMapping("/fintech/{userKey}")
+    @GetMapping("/review/{userKey}")
     fun getReviewData(
         @PathVariable userKey: String
     ): ResponseEntity<LoanReviewDto.LoanReviewResponseDto> {

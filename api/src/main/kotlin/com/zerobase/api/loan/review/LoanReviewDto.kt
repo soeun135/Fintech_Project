@@ -15,7 +15,7 @@ class LoanReviewDto {
 
     data class LoanReview (
         val userKey: String,
-        val loanLimitedAmount: Long,
-        val loanInterest: Double
+        val userLimitedAmount: Long,
+        val userLoanInterest: Double
     )
 }

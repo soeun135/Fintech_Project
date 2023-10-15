@@ -13,15 +13,14 @@ class LoanReviewServiceImpl(
         return LoanReviewDto.LoanReviewResponseDto(
             userKey = userKey,
             loanResult = LoanReviewDto.LoanResult(
-                userLimitAmount = loanResult.loanLimitedAmount,
-                userLoanInterest = loanResult.loanInterest
+                userLimitAmount = loanResult.userLimitedAmount,
+                userLoanInterest = loanResult.userLoanInterest
             )
         )
     }
 
     override fun getLoanResult(userKey: String): LoanReviewDto.LoanReview {
         val loanReview = loanReviewRepository.findByUserKey(userKey)
-
         return LoanReviewDto.LoanReview(
             loanReview.userKey,
             loanReview.loanLimitedAmount,
