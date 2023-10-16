@@ -4,6 +4,3 @@ spring:
   profiles:
     include:
       - domain
-eureka:
-  instance:
-    hostname: 112.157.187.138

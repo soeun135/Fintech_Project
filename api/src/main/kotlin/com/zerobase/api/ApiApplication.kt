@@ -7,6 +7,7 @@ import org.springframework.cache.annotation.EnableCaching
 import org.springframework.context.annotation.ComponentScan
 
 @SpringBootApplication
+@EntityScan(basePackages = ["com.zerobase.domain"])
 @ComponentScan(basePackages = ["com.zerobase"])
 class ApiApplication
 
